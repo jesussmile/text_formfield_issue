@@ -9,7 +9,7 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   bool _isExpanded = false;
-
+TextEditingController textFieldController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -74,7 +74,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
   // ignore: non_constant_identifier_names
   Positioned FlightPlanContainer() {
-    TextEditingController textFieldController = TextEditingController();
+    
     return Positioned(
       top: -30,
       left: 135,
